@@ -40,7 +40,7 @@ class _CarousalWidgetState extends State<CarousalWidget> {
                 options: CarouselOptions(
                     scrollPhysics: const BouncingScrollPhysics(),
                     autoPlay: true,
-                    aspectRatio: 2.15,
+                    aspectRatio: 2.20,
                     viewportFraction: 1,
                     onPageChanged: (index, reason) {
                       setState(() {

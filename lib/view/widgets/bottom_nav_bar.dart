@@ -11,7 +11,7 @@ class _BotNavBarState extends State<BotNavBar> {
   @override
   Widget build(BuildContext context) {
     return  BottomNavigationBar(
-
+type: BottomNavigationBarType.fixed,
       selectedFontSize: 10,
       unselectedFontSize: 10,
       showSelectedLabels: true,
@@ -29,23 +29,23 @@ class _BotNavBarState extends State<BotNavBar> {
       items: [
         BottomNavigationBarItem(
           label: "Home",
-            icon: Icon(Icons.manage_search_sharp),
+            icon:  Image.asset("assets/navbar/home.jpg",height: 25,),
           backgroundColor: Colors.white
         ), BottomNavigationBarItem(
           label: "Categories",
-            icon: Icon(Icons.home),
+            icon: Image.asset("assets/navbar/cat.jpg",height: 25,),
           backgroundColor: Colors.white
         ), BottomNavigationBarItem(
           label: "Notifications",
-            icon: Icon(Icons.notifications),
+            icon: Image.asset("assets/navbar/not.jpg",height: 25,),
           backgroundColor: Colors.white
         ), BottomNavigationBarItem(
           label: "Acounts",
-            icon: Icon(Icons.account_circle_sharp),
+            icon:Image.asset("assets/navbar/acc.jpg",height: 25,),
           backgroundColor: Colors.white
         ), BottomNavigationBarItem(
           label: "Cart",
-            icon: Icon(Icons.shopping_cart),
+            icon:Image.asset("assets/navbar/cart.jpg",height: 25,),
           backgroundColor: Colors.white
         ),
 
