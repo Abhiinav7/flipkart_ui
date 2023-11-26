@@ -8,14 +8,14 @@ class AppbarWidget extends StatefulWidget implements PreferredSizeWidget {
   State<AppbarWidget> createState() => _AppbarWidgetState();
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(110.0);
 }
 
 class _AppbarWidgetState extends State<AppbarWidget> {
   bool isSwitch=false;
+
   @override
-  Widget build(BuildContext context) {
+    Widget build(BuildContext context) {
     return SliverAppBar(
       floating: true,
       pinned: true,
@@ -99,16 +99,12 @@ class _AppbarWidgetState extends State<AppbarWidget> {
                   Icon(Icons.mic_none,size: 21,color: Colors.grey,),
                   SizedBox(width: 6,),
                   Icon(Icons.photo_camera_outlined,size: 21,color: Colors.grey,),
-
                 ],
               ),
             )
-
           ],
         ),
       ),
-
-
     );
   }
 }

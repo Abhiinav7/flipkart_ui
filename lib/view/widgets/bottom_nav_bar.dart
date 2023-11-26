@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 class BotNavBar extends StatefulWidget {
 int index;
+
    BotNavBar({super.key,required this.index});
 
   @override
